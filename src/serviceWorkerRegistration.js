@@ -30,6 +30,8 @@ export function register(config) {
     }
 
     window.addEventListener('load', () => {
+      console.log('ici load event');
+      handleNetworkChange();
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
 
       if (isLocalhost) {
@@ -133,5 +135,14 @@ export function unregister() {
       .catch((error) => {
         console.error(error.message);
       });
+  }
+}
+
+const handleNetworkChange = () => {
+  if(!navigator.onLine) {
+    document.body.classList.add('offline');
+  }
+  else {
+    document.body.classList.remove('offline');
   }
 }
