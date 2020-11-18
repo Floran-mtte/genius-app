@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./assets/fonts/sf-pro-text_regular.eot");
+  src: url("./assets/fonts/SFProText-Regular.woff") format("woff"),
+  url("./assets/fonts/SFProText-Regular.ttf") format("truetype"),
+  url("./assets/fonts/SFProText-Regular.svg") format("svg");
+}
+
 body {
   background-color: #202020;
 }

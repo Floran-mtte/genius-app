@@ -10,7 +10,7 @@ const AlbumList = (props) => {
 }
 
 AlbumList.propTypes = {
-    album_list: PropTypes.object
+    album_list: PropTypes.array
 }
 
 export default AlbumList
