@@ -45,7 +45,7 @@ const SignIn = (props) => {
             <Header/>
             <SignInLayout>
                 <SignInContainer>
-                    <SignInTitle>Sign In to the marvel pro App</SignInTitle>
+                    <SignInTitle>Sign In to Genius App</SignInTitle>
                     <SignInForm onSubmit={handleSubmit}>
                         <FormInput
                             autoFocus
